@@ -7,7 +7,7 @@ export class RascunhoState implements IDocumentoState {
 
     aprovar(): void {
         console.log("Documento aprovado.");
-        // O state do documento por padrão é a revisão, mas, eu preciso garantir, que o state vai mudar de instancia para revisão
+        // O state do documento por padrão é o rascunho, eu preciso garantir, que o state vai mudar de instancia para revisão
         this.documento.setState(this.documento.revisaoState)
     }
 
