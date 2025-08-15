@@ -1,0 +1,19 @@
+// Importa as subclasses de documentos
+import { DocumentoFinal } from "./methods/documentoFInal";
+import { DocumentoRascunho } from "./methods/documentoRacunho";
+
+// Cria uma instância de DocumentoRascunho e executa o processo completo
+const d1 = new DocumentoRascunho();
+d1.processar();
+// Saída:
+// Abrir Documento...
+// Validando rascunho...
+// Salvar Documento...
+
+// Cria uma instância de DocumentoFinal e executa o processo completo
+const d2 = new DocumentoFinal();
+d2.processar();
+// Saída:
+// Abrir Documento...
+// Validando Documento...
+// Salvar Documento...
